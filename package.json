@@ -1,0 +1,29 @@
+{
+  "name": "node-svg-inliner",
+  "version": "0.0.3",
+  "description": "Node.js SVG inliner for web servers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nissehutt/node-svg-inliner.git"
+  },
+  "keywords": [
+    "node",
+    "svg",
+    "inliner",
+    "html",
+    "xml"
+  ],
+  "author": "Erik Weilow",
+  "license": "GPL 2.0",
+  "bugs": {
+    "url": "https://github.com/nissehutt/node-svg-inliner/issues"
+  },
+  "homepage": "https://github.com/nissehutt/node-svg-inliner",
+  "dependencies": {
+    "xml2js": "^0.4.4"
+  }
+}
