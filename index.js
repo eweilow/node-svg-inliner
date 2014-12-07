@@ -39,7 +39,7 @@ module.exports = function(options){
 
   var basedir = options.baseDirectory || __dirname;
   var allowedtags = options.allowedTags || ["p", "svg", "g", "path", "polygon", "rect"];
-  var allowedattrs = options.allowedAttributes || ["id", "class", "d", "viewBox", "width", "height"];
+  var allowedattrs = options.allowedAttributes || ["id", "fill", "points", "class", "d", "viewBox", "width", "height", "x", "y", "style", "transform"];
   var usecache = options.cache || true;
 
   var parseSVG = function(fpath) {
