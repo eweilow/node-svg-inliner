@@ -16,8 +16,8 @@ The options you can change is below (default values)
 ```javascript
 {
   baseDirectory: __dirname,
-  allowedTags: ["p", "svg", "g", "path"],
-  allowedAttributes: ["id", "class", "d", "viewBox", "width", "height"],
+  allowedTags: ["p", "svg", "g", "path", "polygon", "rect"],
+  allowedAttributes: ["id", "fill", "points", "class", "d", "viewBox", "width", "height", "x", "y", "style", "transform"],
   cache: true
 }
 ```

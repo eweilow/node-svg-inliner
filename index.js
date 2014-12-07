@@ -38,7 +38,7 @@ module.exports = function(options){
   var cache = { };
 
   var basedir = options.baseDirectory || __dirname;
-  var allowedtags = options.allowedTags || ["p", "svg", "g", "path"];
+  var allowedtags = options.allowedTags || ["p", "svg", "g", "path", "polygon", "rect"];
   var allowedattrs = options.allowedAttributes || ["id", "class", "d", "viewBox", "width", "height"];
   var usecache = options.cache || true;
 
