@@ -36,11 +36,13 @@ function recursiveParse(node, allowedkeys, allowedattributes)
 
 module.exports = function(options){
   var cache = { };
-
+  options = options || { };
+  
   var basedir = options.baseDirectory || __dirname;
   var allowedtags = options.allowedTags || ["p", "svg", "g", "path", "polygon", "rect"];
   var allowedattrs = options.allowedAttributes || ["id", "fill", "points", "class", "d", "viewBox", "width", "height", "x", "y", "style", "transform"];
   var usecache = options.cache || true;
+  var removenewlines = options.removeNewLines || false;
 
   var parseSVG = function(fpath) {
     var data = fs.readFileSync(fpath);
@@ -48,14 +50,15 @@ module.exports = function(options){
     var xmlData = "";
     parser.parseString(data, function (err, result) {
       var sel = recursiveParse(result, allowedtags, allowedattrs);
-        var builder = new xml2js.Builder({headless: true});
+        var builder = new xml2js.Builder({headless: true, renderOpts: { pretty: !removenewlines, indent: removenewlines?"": "  ", newline: removenewlines?"": "\n"}});
         xmlData = builder.buildObject(sel);
     });
     return xmlData;
   };
   return function(filepath) {
     var fpath = path.join(basedir, filepath);
-
+    if(!fs.existsSync(fpath)) return null;
+    
     if(!usecache) return parseSVG(fpath);
 
     var lastchange = fs.statSync(fpath).mtime;
