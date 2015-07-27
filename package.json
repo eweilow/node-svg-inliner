@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/eweilow/node-svg-inliner",
   "dependencies": {
-    "xml2js": "^0.4.4"
+    "xml2js": "^0.4.9"
   }
 }
