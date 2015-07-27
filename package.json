@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nissehutt/node-svg-inliner.git"
+    "url": "https://github.com/eweilow/node-svg-inliner.git"
   },
   "keywords": [
     "node",
@@ -20,9 +20,9 @@
   "author": "Erik Weilow",
   "license": "GPL 2.0",
   "bugs": {
-    "url": "https://github.com/nissehutt/node-svg-inliner/issues"
+    "url": "https://github.com/eweilow/node-svg-inliner/issues"
   },
-  "homepage": "https://github.com/nissehutt/node-svg-inliner",
+  "homepage": "https://github.com/eweilow/node-svg-inliner",
   "dependencies": {
     "xml2js": "^0.4.4"
   }
