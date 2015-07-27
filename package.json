@@ -4,7 +4,7 @@
   "description": "Node.js SVG inliner for web servers",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/mocha/bin/_mocha"
   },
   "repository": {
     "type": "git",
