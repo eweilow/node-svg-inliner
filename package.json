@@ -1,6 +1,6 @@
 {
   "name": "node-svg-inliner",
-  "version": "0.0.5",
+  "version": "1.0.1",
   "description": "Node.js SVG inliner for web servers",
   "main": "index.js",
   "scripts": {
